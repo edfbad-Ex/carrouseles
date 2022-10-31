@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import {MenuLeft}  from "./components/MenuLeft";
+import Slider0 from "./components/Slider0";
+import Slider1 from "./components/Slider1";
+import Slider2 from "./components/Slider2";
 
-function App() {
+const App = () => {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="Container-Sections">
+
+      <div className="Section-Menu">
+        <MenuLeft/>
+      </div>
+
+      <div className="Section-Sliders">
+        <Slider0/>
+        <Slider1/>
+        
+      </div>
+
     </div>
   );
-}
+};
 
 export default App;
